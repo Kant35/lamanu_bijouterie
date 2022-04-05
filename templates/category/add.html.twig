@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Ajouter une catégorie{% endblock %}
+
+{% block body %}
+
+{# {{ dump(form) }} #}
+
+{# 1ère façn d'afficher un form #}
+{# {{ form(form) }} #}
+
+{# 2ème méthode #}
+
+{# <form action=""> #}
+{{ form_start(form) }}
+
+    {{ form_row(form.nom) }}
+
+    <button class="btn btn-success">Ajouter Catégorie</button>
+
+{{ form_end(form) }}
+{# </form> #}
+
+{% endblock %}
